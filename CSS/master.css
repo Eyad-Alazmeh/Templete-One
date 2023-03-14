@@ -1,0 +1,229 @@
+/* Start varibales */
+:root{
+  --main-color: #10cab7
+}
+/* End varibales */
+/* Strat Londing */
+.londing {
+  background-image: url(../image/85838144-black-and-white-mountain-in-switzerland.webp);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.londing .intro-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  line-height: 1.5;
+  width: 320px;
+}
+.londing .intro-text h1{
+  margin: 0;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.londing .intro-text p{
+  margin: 0;
+}
+/* End Londing */
+/* Start Fearures */
+.features{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.features .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 20px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.features .container .feat {
+  text-align: center;
+  padding: 20px;
+}
+.features .container .feat i {
+  color: var(--main-color);
+}
+.features .container .feat h3{
+  font-weight: 800;
+}
+.features .container .feat p{
+  line-height: 1.7;
+  margin: 0;
+  color: #777;
+  font-size: 17px;
+}
+/* End Fearures */
+/* Start Services */
+.services-content{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 30px;
+}
+.services-content .srv{
+  display: flex;
+  margin-bottom: 40px;
+}
+.services-content .srv i{
+  flex-basis: 60px;
+  color: var(--main-color);
+}
+.services-content .srv .text{
+  flex: 1;
+}
+.services-content .srv .text h3{
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+.services-content .srv .text p{
+  line-height: 1.6;
+  font-weight: 300;
+  color: #444;
+}
+.nnnnn{
+  position: relative;
+}
+.services-content .nnnnn::before{
+  content: "";
+  position: absolute;
+  right: -15%;
+  top: -10%;
+  background-color: #2c4755;
+  height: 120%;
+  width: 30%;
+  z-index: -1;
+}
+.services-content .col img{
+  width: 100%;
+  height: 100%;
+}
+/* End Services */
+/* Start Portfolio */
+.portfolio-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 5% 5%;
+  margin-top: 80px;
+}
+.portfolio-content .col img{
+  width: 100%;
+  height: 70%;
+}
+.portfolio-content .col .text{
+  margin:0 5%;
+}
+.portfolio-content .col .text h3{
+  font-weight: 800;
+  margin: 10px 0;
+}
+.portfolio-content .col .text p{
+  margin: 0;
+  color: #777;
+}
+.portfolio .container .button-content{
+  margin: 70px 0;
+  text-align: center;
+}
+.portfolio .container .button-content button{
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  font-weight: 800;
+  border: 2px #333 solid;
+  transition: .3s;
+}
+.portfolio .container .button-content button:hover{
+  background-color: #333;
+  color: white;
+  font-weight: 800;
+  border-radius: 10px;
+  transform: scale(105%,110%);
+}
+/* End Portfolio */
+/* Strat About */
+.container .about-content{
+  margin: 50px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 35%));
+  justify-content: space-evenly;
+}
+.container .about-content .col1{
+  position: relative;
+}
+.container .about-content .col1::before{
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 15%;
+  height: 100%;
+  top: -10%;
+  right: 22.5%;
+  z-index: -1;
+}
+.container .about-content .col1::after{
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 30%;
+  height: 20%;
+  bottom: 10%;
+  right: 5%;
+  z-index: -2;
+}
+.container .about-content .col1 img{
+  width: 70%;
+  height: 100%;
+
+}
+.container .about-content .col .hr{
+  height: 3px;
+  width: 50%;
+  background-color: var(--main-color);
+}
+.container .about-content .col .text .p1{
+  color: #2c4755;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 800;
+}
+/* End About */
+/* Start Contact */
+.contact{
+  margin-top: 70px;
+}
+.contact .contact-content p:first-child{
+  color: #2c4755;
+  font-size: 25px;
+  margin: 80px 0 20px 100px;
+}
+.contact .contact-content p:nth-child(2){
+  color: var(--main-color);
+  font-size: 25px;
+  margin: 0  0 20px 140px;
+}
+.contact .contact-content p:last-child{
+  color: #797979;
+  font-size: 10px;
+  margin: 0 0 20px 180px;
+}
+/* End Contact */
+/* Start Footer */
+.footer{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: #2c4755;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+}
+.leon{
+  color: var(--main-color);
+}
+/* End Footer */
